@@ -1,19 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+
+let year = new Date().getFullYear()
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Hi, my name is Israel Huallpara">
 	<main>
-		<h1>Page under development...</h1>
+		<h1> Hi, page under development...</h1>
+		
+		<p>&copy; {year}</p>
 		<div>
-			<div>
-				<img src="https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif" alt="Coding">
-			</div>
-			<div>
-				asd
-			</div>
-		</div>
+			<img style="top:-10%;" src="https://i.pinimg.com/originals/8a/2e/4c/8a2e4c79a1b9c983dc6bf8d6cbada43a.gif" alt="Coding">
+		</div>		
 		
 	</main>
 </Layout>
@@ -23,6 +21,7 @@ import Card from '../components/Card.astro';
 		margin: auto;
 		padding: 1.5rem;
 		max-width: 90%;
+		text-align: center;
 	}
 	h1 {
 		font-size: 3rem;
