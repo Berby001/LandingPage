@@ -1,10 +1,41 @@
 ---
 import Header from '../components/HeaderMain.astro';
 import Layout from '../layouts/Layout.astro';
+import {Icon} from 'astro-icon';
 ---
 
 <Layout title="Start">
 	<Header title="IJHM"></Header>
 	<!-- Sección de presentación -->
+	<div class="mt-4" id="Inicio">
+		<div class="container mx-auto flex items-center flex-col sm:flex-row">
+			<div class="p-4">
+				<h1 class="text-5xl font-medium">Hi <Icon class="w-10 inline-block animate-bounce" name="twemoji:waving-hand"></Icon>, I'm Israel Huallpara</h1>
+				<br>
+				<p class="text-xl text-justify">I'm a web developer, i like data science and experimenting with JS technologies.</p>
+				<p class="text-xl text-justify">Currently, I am in a relearning process, so I will be sharing notes and experiences of my prefessional growth.</p>
+			</div>
+			<div class="right-0">
+				<img src="/public/images/relearning.jpeg" alt="relearning" class="w-11/12 rounded-xl rotate-3 hidden sm:block shadow-xl hover:rotate-0 duration-1000">
+				<div class="flex justify-center sm:my-5">
+					<a href="https://www.facebook.com/profile.php?id=100089922206225" target="_blank">
+						<Icon class="w-10 text-blue-800 hover:cursor-pointer hover:scale-125" name="ic:baseline-facebook"></Icon>
+					</a>					
+					<a href="https://github.com/Berby001" target="_blank">
+						<Icon class="w-10 text-black hover:cursor-pointer hover:scale-125" name="ci:github"></Icon>
+					</a>					
+					<a href="mailto:israelhuallpara@gmail.com?subject=Contacto&body=Saludos%2C%20deseo%20comunicarme%20contigo..." target="_blank">
+						<Icon class="w-10 text-red-700 hover:cursor-pointer hover:scale-125" name="mdi:gmail"></Icon>
+					</a>					
+				</div>
+			</div>
+		</div>
+		<div class="h-20" style="background: rgb(188,204,254); background: linear-gradient(0deg, rgba(188,204,254,1) 0%, rgba(255,255,255,0) 80%);"></div>
+		<div class="flex flex-col items-center w-full " style="background-color: #bcccfe;">
+			<h1 class="pt-3 text-2xl text-indigo-700 hover:text-3xl duration-700 animate-bounce">Site under development...</h1>
+			<img class="w-4/5 hover:animate-pulse delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:invisible" data-taos-offset="50" src="https://cdn.dribbble.com/users/2401141/screenshots/5487982/developers-gif-showcase.gif" alt="underconstruction">
+		</div>
+		
+	</div>
 </Layout>
 
