@@ -1,0 +1,28 @@
+---
+import { Icon } from 'astro-icon';
+export interface Props {
+    title: string;   
+}
+const {title} = Astro.props;
+---
+<div class="h-20 bg-black bg-opacity-60 shadow-xl hover:bg-opacity-50 fixed w-full">
+    <div class="flex items-center h-20 px-5">
+        <h1 class="flex-auto text-2xl">{title}</h1>    
+        <div class="flex justify-end">
+            <div class="w-10 sm:hidden">
+                <Icon name="ic:round-menu-open"></Icon>
+            </div>           
+            <div class="w-full hidden sm:block">
+                <a class="px-1">Inicio</a>
+                <a class="px-1">Proyectos</a>
+                <a class="px-1">Estudios</a>
+                <a class="px-1">Contáctame</a>
+            </div>             
+        </div>
+        <div class="text-xs bg-blue-500 p-1 rounded-md ml-3 items-center">
+            <span>EN</span>
+        </div>            
+    </div>
+    
+</div>
+<div class="h-20"></div>
