@@ -7,5 +7,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://berby001.github.io',
-  base: '/landing-page',
+  base: '/LandingPage',
 });
